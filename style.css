@@ -1,0 +1,153 @@
+:root {
+    --main: hsl(225, 100%, 94%);
+    --secondary: hsl(225, 100%, 98%);
+    --secondary-2: hsl(245, 75%, 52%);
+    --tetiary: hsl(224, 23%, 55%);
+    --supplementary1: hsl(223, 47%, 23%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--main);
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+main,
+.card,
+.body-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    justify-content: center;
+    min-height: 100%;
+}
+
+.card {
+    max-width: 40ch;
+    border-radius: 10px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, .15);
+    overflow: hidden;
+}
+
+.header-picture {
+    overflow: hidden;
+    height: 100%;
+}
+
+.body-content {
+    background-color: white;
+    padding: 2rem 3rem;
+    text-align: center;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 1.9rem;
+    margin-top: .5em;
+    font-weight: 600;
+    color: var(--supplementary1);
+}
+
+.body-content p:nth-of-type(1) {
+    line-height: 1.5;
+    color: var(--tetiary);
+}
+
+.component,
+.comp1 {
+    display: flex;
+    align-items: center;
+}
+
+.component {
+    justify-content: space-between;
+    width: 100%;
+    background: var(--secondary);
+    padding: 1rem 1.2em;
+}
+
+.component a {
+    font-weight: 800;
+    font-size: smaller;
+    color: var(--secondary-2);
+}
+
+.text p:nth-of-type(1) {
+    font-weight: 600;
+    margin-bottom: .5em;
+    color: var(--supplementary1);
+}
+
+.text p:nth-of-type(2) {
+    color: var(--tetiary);
+}
+
+.component,
+button {
+    border-radius: 10px;
+}
+
+.comp1 {
+    gap: 1rem;
+}
+
+button {
+    width: 100%;
+    border: 0;
+    background: none;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.proceed {
+    background-color: var(--secondary-2);
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 15px 15px 0 var(--main);
+}
+
+.cancel {
+    color: var(--tetiary);
+    padding: 1rem;
+}
+
+:is(.proceed, .component a):hover {
+    opacity: .5;
+    text-decoration: none;
+}
+
+:is(button, .component a) {
+    transition: all .1s ease-in-out, text-decoration .1s;
+}
+
+.cancel:hover {
+    color: var(--supplementary1);
+}
+
+@media (max-width: 800px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+}

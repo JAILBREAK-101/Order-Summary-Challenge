@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+    .attribution {
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      font-weight: 600;
+    }
+
+    .attribution a:nth-of-type(2) {
+      color: hsl(0, 91%, 36%);
+    }
+
+    .attribution a:nth-of-type(2):hover {
+      color: red;
+    }
+
+    .attribution a:hover {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj"
+      target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/JAILBREAK-101">JailBreak</a>.
+  </div>
+
+  <main>
+    <div class="card">
+      <img class="header-picture" src="./images/illustration-hero.svg" alt="image">
+      <div class="body-content">
+        <h1>Order Summary</h1>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!</p>
+        <section class="component">
+          <div class="comp1">
+            <img class="img-music" src="./images/icon-music.svg" alt="">
+            <div class="text">
+              <p>Annual Plan</p>
+              <p>$59.99/year</p>
+            </div>
+          </div>
+          <a href="#">Change</a>
+        </section>
+
+        <button class="proceed">Proceed to Payment</button>
+        <button class="cancel">Cancel Order</button>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
