@@ -25,9 +25,7 @@ Users should be able to:
 ![](./Solution%20screen-shot.png.jpg)
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://genixjailbreak.netlify.app/)
 
 ## My process
 
